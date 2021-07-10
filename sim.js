@@ -113,9 +113,9 @@ function makeFileList(method_list_path) {
                     [method[i][10], method[i][14]],
                     [method[i][11], method[i][15]],
                 ]
-	        for (var j = 0; j < pairs.length; j++) {
-	            files.push(pairs[j]);
-	        }
+	    }
+	    for (var j = 0; j < pairs.length; j++) {
+	        files.push(pairs[j]);
 	    }
 	} else if (set_num == 3) {
 	    for (var i = 0; i <set3.length; i++) {
@@ -125,10 +125,10 @@ function makeFileList(method_list_path) {
                     [method[i][2], method[i][6]],
                     [method[i][3], method[i][7]],
                 ] 
- 	        for (var j = 0; j < pairs.length; j++) {
- 	            files.push(pairs[j]);
- 	        }
             }
+	    for (var j = 0; j < pairs.length; j++) {
+	        files.push(pairs[j]);
+	    }
 	} else if (set_num == 4 || set_num == 5) {
 	    for (var i = 0; i <set4.length; i++) {
 	        pairs = [
@@ -141,42 +141,15 @@ function makeFileList(method_list_path) {
                     [method[i][10], method[i][6]],
                     [method[i][11], method[i][7]],
                 ]
- 	        for (var j = 0; j < pairs.length; j++) {
- 	            files.push(pairs[j]);
- 	        }
-	    }
+            }
+ 	    for (var j = 0; j < pairs.length; j++) {
+ 	        files.push(pairs[j]);
+ 	    }
+	    
 	}
     files.shuffle();
     return files;
 }		 
-
-	    
-    //for (var i = 0; i < method[0].length; i++) {
-        // TODO: automate here
-        /*
-            you have to customize this part.
-            carefully set depending on whether
-            you compare parallel pairs or not.
-        */
-        //pairs = [
-        //    [method[0][i], method[1][i]],
-        //    [method[0][i], method[2][i]],
-        //    [method[1][i], method[0][i]],
-        //    [method[1][i], method[2][i]],
-        //    [method[2][i], method[0][i]],
-        //    [method[2][i], method[1][i]],
-        //]
-        /*
-            end
-        */
-
-        //for (var j = 0; j < pairs.length; j++) {
-        //    files.push(pairs[j]);
-        //}
-		//}
-    //files.shuffle();
-    //return files;
-	//}
 
 function setAudio() {
     document.getElementById("page").textContent = "" + (n + 1) + "/" + scores.length;
