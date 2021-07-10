@@ -100,7 +100,17 @@ function makeFileList(method_list_path) {
         method.push(loadText(method_list_path[i]));
         // method.push(loadText(method_list_path[i]).shuffle());
     }
-
+    var set_num = "0"
+    var number = document.getElementsByName("set");
+    for (var i = 0; i < number.length; i++) {
+        if (number[i].checked) {
+            set_num = number[i].value;
+        }
+    }
+    if (set_num == "0") {
+        alert("Please press the setlist number button.");
+        return false;
+    }
     var files = Array();
 	if (set_num == 1 || set_num == 2) {
 	    for (var i = 0; i <set1.length; i++) {
