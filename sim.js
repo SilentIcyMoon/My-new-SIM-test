@@ -144,11 +144,11 @@ function makeFileList(method_list_path) {
                     [method[i][6], method[i][10]],
                     [method[i][7], method[i][11]],
                 ]
-            }
-	}
-	    for (var j = 0; j < pairs.length; j++) {
-	            files.push(pairs[j]);
+	        for (var j = 0; j < pairs.length; j++) {
+	                files.push(pairs[j]);
+	        }
 	    }
+	}
     files.shuffle();
     return files;
 }		 
