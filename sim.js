@@ -40,8 +40,6 @@ function start_experiment() {
 
     // convert display
     Display();
-
-    var method_list_path = [];
     /*
         you have to customize this part
     */
@@ -70,7 +68,7 @@ function start_experiment() {
     outfile = name + "_set" + set_num + ".csv";
     scores = (new Array(file_list.length)).fill(0);
     eval = document.getElementsByName("eval");
-    init()
+    init();
 }
 
 // convert display
@@ -113,7 +111,7 @@ function makeFileList(method_list_path) {
     }
     var files = Array();
 	if (set_num == 1 || set_num == 2) {
-	    for (var i = 0; i <set1.length; i++) {
+	    for (var i = 0; i <set_num.length; i++) {
                 pairs = [
                     [method[i][0], method[i][4]],
                     [method[i][1], method[i][5]],
@@ -129,7 +127,7 @@ function makeFileList(method_list_path) {
 	        files.push(pairs[j]);
 	    }
 	} else if (set_num == 3) {
-	    for (var i = 0; i <set3.length; i++) {
+	    for (var i = 0; i <set_num.length; i++) {
 	        pairs = [
 	            [method[i][0], method[i][4]],
                     [method[i][1], method[i][5]],
@@ -141,7 +139,7 @@ function makeFileList(method_list_path) {
 	        files.push(pairs[j]);
 	    }
 	} else if (set_num == 4 || set_num == 5) {
-	    for (var i = 0; i <set4.length; i++) {
+	    for (var i = 0; i <set_num.length; i++) {
 	        pairs = [
                     [method[i][0], method[i][4]],
                     [method[i][1], method[i][5]],
