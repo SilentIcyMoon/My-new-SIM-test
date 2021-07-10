@@ -111,7 +111,7 @@ function makeFileList(method_list_path) {
     }
     var files = Array();
 	if (set_num == 1 || set_num == 2) {
-	    for (var i = 0; i <set_num.length; i++) {
+	    for (var i = 0; i < 5; i++) {
                 pairs = [
                     [method[i][0], method[i][4]],
                     [method[i][1], method[i][5]],
@@ -127,7 +127,7 @@ function makeFileList(method_list_path) {
 	        files.push(pairs[j]);
 	    }
 	} else if (set_num == 3) {
-	    for (var i = 0; i <set_num.length; i++) {
+	    for (var i = 0; i <4; i++) {
 	        pairs = [
 	            [method[i][0], method[i][4]],
                     [method[i][1], method[i][5]],
@@ -139,7 +139,7 @@ function makeFileList(method_list_path) {
 	        files.push(pairs[j]);
 	    }
 	} else if (set_num == 4 || set_num == 5) {
-	    for (var i = 0; i <set_num.length; i++) {
+	    for (var i = 0; i <4; i++) {
 	        pairs = [
                     [method[i][0], method[i][4]],
                     [method[i][1], method[i][5]],
