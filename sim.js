@@ -45,6 +45,7 @@ function start_experiment() {
     /*
         you have to customize this part
     */
+    var method_paths = [];
     // read filepath
     if (set_num == 1 || set_num == 2) {
         method_paths.push(wav_dir + "set" + set_num + "/natural2natural.list");
